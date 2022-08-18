@@ -1,0 +1,239 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+/* Navigation bar  */
+#navbar{
+    display:flex;
+    align-items: center;
+    position:relative;
+    
+}
+  
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+
+/* navigation bar:logo and image  */
+#logo{
+    margin:10px 34px;
+
+}
+
+#logo img{
+height:54px;
+margin:6px 6px;
+border-radius:30px;
+}
+
+
+/* navigation bar : list styling  */
+#navbar ul{
+    display:flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+ 
+ #navbar ul li{
+     list-style: none;
+     font-size: 1.3rem;
+    
+ }
+  
+ #navbar ul li a{
+     color:white;
+    display:block;
+    padding:3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
+  
+ #navbar ul li a:hover{
+    color:black;
+    background-color:white;
+ 
+}
+  
+/* home section  */
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+     height:332px;
+    justify-content: center;
+    align-items: center;
+}
+ 
+#home::before{
+    content:"";
+    background:url('../bg1.jpg') no-repeat center center/cover; 
+    position: absolute;
+    height:518px;
+    width:100%;
+    z-index: -1;
+    opacity: 0.9;
+    
+}
+ #home h1{
+     color:white;
+     text-align: center;
+     font-family: 'Baloo Bhai 2', cursive;
+
+ }
+ #home p{
+     color:white;
+     text-align: center;
+     font-size: 1.5rem;
+     font-family: 'Baloo Bhai 2', cursive;
+ }
+   
+    /* service section  */
+     #services{
+         margin: 125px;
+         display: flex;
+     }
+      
+#services .box{
+         border: 2px solid brown;
+         padding:20px;
+         margin:35px 5px;
+         background-color: rgb(235, 234, 233);
+        border-radius: 23px;
+    
+     }
+    #services .box img{
+          height:130px;
+          display: block;
+          margin: auto;
+          border-radius: 45px;
+    
+      } 
+    /* #services .box p{
+        font-family: 'Baloo Bhai 2', cursive;
+    } */
+
+   /* client section */
+    #client-section{
+        position:absolute;
+         height:344px;
+         top:945px;
+         right:2px;
+         width:1515px;
+    }
+     
+    #client-section::before{
+        content:"";
+    background:url('../bg2.jpg') no-repeat center center/cover; 
+    position: absolute;
+    height:290px;
+    width:100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+    }
+
+    
+     
+    #clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+     #clients img{
+         height:120px;
+     }
+    
+     /* contact section  */
+     #contact{
+        position: absolute;
+        top: 1232px;
+        right: 2px;
+        width: 1516px;
+        height: 401px;
+     }
+      
+     #contact::before{
+        content:"";
+        background:url('../contact.jpeg') no-repeat center center/cover; 
+        position: absolute;
+        height:100%;
+        width:100%;
+        z-index: -1;
+        opacity: 0.7;
+        
+     }
+     #contact-box{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 34px;
+      } 
+       #contact-box input,
+       #contact-box textarea{
+           width:100%;
+           padding:0.1rem;
+           border-radius: 8px;
+        
+       }
+       #contact-box form{
+           width:500px;
+       }
+       #contact-box label{
+           font: size 1.5em;
+           font-family: 'Baloo Bhai 2', cursive;
+       }
+        
+       
+
+   
+     /* footer style */
+     footer{
+         background: #000;
+         color:white;
+         padding:9px 20px;
+         position: absolute;
+         top: 1633px;
+         right: 2px;
+          width: 1476px;
+     }
+/* utility classes */
+.h-primary{
+    font-size: 2.8rem;
+    padding:5px;
+}
+.primary{
+    height: 267px;
+    position: absolute;
+    top: 526px;
+    left: 656px;
+    font-size: 2.5rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+ 
+.h-secondary{
+    font-size:1.5rem;
+    padding:3px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.btn{
+    padding: 5px 10px;
+    border:2px solid white;
+    background-color: brown;
+    color:white;
+    margin:17px;
+    font-size:1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+ .center{
+     text-align: center;
+ }
